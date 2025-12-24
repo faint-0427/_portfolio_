@@ -14,7 +14,7 @@ $('#fullpage').fullpage({
         } else {
             $("#header,#fp-nav").removeClass("active");
         };
-        if (destination === 6) {
+        if (destination === 7) {
             $("#fp-nav, #header").fadeOut();
         } else {
             $("#fp-nav, #header").fadeIn();

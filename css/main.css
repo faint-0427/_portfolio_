@@ -129,7 +129,7 @@ body{font-family: "play", "Pretendard", sans-serif; font-size: 1.6rem; color: #0
 .team{margin-bottom: 100px;}
 .team .card-list{display: grid; grid-template-columns: 1fr;}
 .team .card-list .card-image-group{display: flex; width: 40%;height: 100%; gap: 20px;}
-.team .card-list .card-item .card-image {width: 95%;height: 70%;  object-fit: cover; transition: 0.5s all; filter: brightness(0.9);}
+.team .card-list .card-item .card-image {width: 95%;height: 70%;  object-fit: cover; transition: 0.5s all; }
 .team .card-title{text-align: center;margin: 0;}
 .team .card-list .card-item{max-height: 700px;}
 .team .card-list .card-item .card-content{padding: 20px;}
