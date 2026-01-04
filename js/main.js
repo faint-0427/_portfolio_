@@ -27,9 +27,47 @@ $('#fullpage').fullpage({
             $(".gnb > li").eq(2).addClass("on").siblings().removeClass("on");
         } else if (destination === 4) {
             $(".gnb > li").eq(3).addClass("on").siblings().removeClass("on");
-        } else {
+        } else if (destination === 5) {
             $(".gnb > li").eq(4).addClass("on").siblings().removeClass("on");
+        } else {
+            $(".gnb > li").eq(5).addClass("on").siblings().removeClass("on");
         }
     },
 });
 
+function togglePopup(isOpen) {
+    const popup = document.getElementById('bannerPopup');
+    const popupBody = popup.querySelector('.popup-body');
+    
+    if (isOpen) {
+        popup.style.display = 'block';
+        document.body.classList.add('stop-scroll');
+        
+        if (popupBody) popupBody.scrollTop = 0;
+        
+        if (window.fullpage_api) {
+            fullpage_api.setAllowScrolling(false);
+            fullpage_api.setKeyboardScrolling(false);
+        }
+    } else {
+        popup.style.display = 'none';
+        document.body.classList.remove('stop-scroll');
+        
+        if (window.fullpage_api) {
+            fullpage_api.setAllowScrolling(true);
+            fullpage_api.setKeyboardScrolling(true);
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const popupEl = document.getElementById('bannerPopup');
+    
+    popupEl.addEventListener('wheel', function(e) {
+        e.stopPropagation(); 
+    }, { passive: false });
+
+    popupEl.addEventListener('touchmove', function(e) {
+        e.stopPropagation(); 
+    }, { passive: false });
+});

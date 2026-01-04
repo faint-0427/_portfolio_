@@ -42,7 +42,7 @@
                 </ul>
 
             </nav>
-            <h1><a href="#menu5">GAHYEON BAK</a></h1>
+            <h1><a href="#menu6">GAHYEON BAK</a></h1>
 
         </div>
     </header><!-- 따로 넣어야 화면 고정  -->
@@ -148,7 +148,7 @@
                                     <ul class="tool">
 
                                         <li><img src="images/figma.png" alt=""></li>
-                                        
+
                                         <li><img src="images/PS.png" alt=""></li>
                                     </ul>
                                 </div>
@@ -207,7 +207,7 @@
                                 </div>
                             </div>
 
-                            <nav class="card-links">
+                            <nav class="card-links app-links">
                                 <a href="https://faint-0427.github.io/indeep/" target="_blank"
                                     class="btn btn-design">DESIGN</a>
                                 <a href="https://www.figma.com/design/APSt3AurfM9xLZhIGp9AFP/indeep_%EC%95%B1%EA%B8%B0%ED%9A%8D%EC%84%9C?node-id=0-1&t=V2rOFTFpFU5IXoPk-1"
@@ -219,6 +219,26 @@
 
 
 
+                        <li class="card-item">
+                            <img class="card-image" src="images/banner.png" alt="SEA LIFE">
+
+                            <div class="card-content">
+                                <h3 class="card-title">BANNER DESIGN</h3>
+                                <div class="card-content-txt">
+                                    <p>각종 배너 디자인</p>
+                                    <ul class="tool">
+
+                                        <li><img src="images/figma.png" alt=""></li>
+                                        <li><img src="images/PS.png" alt=""></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <nav class="card-links">
+                                <button type="button" class="open-btn btn btn-design" onclick="togglePopup(true)">
+                                    BANNER</button>
+                            </nav>
+                        </li>
                         <li class="card-item">
                             <img class="card-image" src="images/cardnews4.png" alt="SEA LIFE">
 
@@ -244,7 +264,7 @@
                 </div>
             </div>
         </section>
-                <section data-anchor="menu4" class="section web fp-auto-height-responsive">
+        <section data-anchor="menu4" class="section web fp-auto-height-responsive">
             <div class="inner">
                 <div class="web_header">
                     <h2></h2>
@@ -429,6 +449,19 @@
     </div>
 
     </footer>
+    </div>
+    <div id="bannerPopup" class="popup-overlay">
+        <button type="button" class="close-x" onclick="togglePopup(false)">&times;</button>
+        <div class="popup-box">
+            <div class="popup-header">
+                
+            </div>
+
+            <div class="popup-body">
+                <img src="images/banner.png" alt="성형외과 배너" class="full-img">
+                <img src="images/banner2.png" alt="결정사 배너" class="full-img">
+            </div>
+        </div>
     </div>
 </body>
 
